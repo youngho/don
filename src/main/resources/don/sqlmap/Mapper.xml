@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ 
+<mapper namespace= "userControlMapper" >
+    <select id ="selectSample" parameterType="java.util.HashMap" resultType= "java.util.HashMap">
+        select *
+        from cards
+        where conm = #{conm}
+    </select >
+ 
+    <insert id ="insertTable01" parameterType="java.util.HashMap" >
+        insert into CARDS
+        (conm, cardnm, cardnum)
+        values
+        ( #{conm}, #{cardnm}, #{cardnum} )
+    </insert >
+    
+    <select id ="R01" parameterType="java.util.HashMap" resultType= "java.util.HashMap">
+        select *
+        from CARD
+    </select >
+    
+    <select id ="selectMoney" parameterType="java.util.HashMap" resultType= "java.util.HashMap">
+        select *
+        from MONEY_OUT
+    </select >
+    <select id ="selectMoneyOneMonth" parameterType="java.util.HashMap" resultType= "java.util.HashMap">
+    	select * from MONEY_OUT where used_dt <![CDATA[>]]> STR_TO_DATE('11-09-2013','%d-%m-%Y') and used_dt <![CDATA[<]]> STR_TO_DATE('10-10-2013','%d-%m-%Y') order by used_dt desc
+    </select >
+    
+    <insert id ="insertMoney" parameterType="java.util.HashMap">
+        insert
+        into
+        	MONEY_OUT(
+        		 ID_OUT
+				,USED_NAME
+				,USED_DT
+				,TOT_USED_MONEY
+				,CARD_GGANG
+				)
+			VALUES(
+				  #{idOut}
+				, #{usedName}
+				, #{usedDt}
+				, #{totUsedMoney}
+				, #{cardGgang}
+				)
+    </insert >
+    
+    <!-- 카드번호조회 -->
+    <select id="retireveCardNum" resultType="String">
+    	select CARD_NUM from `CARD` c group by card_NUM
+    </select>
+</mapper>

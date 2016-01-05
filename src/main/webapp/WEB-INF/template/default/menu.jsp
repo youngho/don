@@ -1,5 +1,5 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<div class="menu">
+<%-- <div class="menu">
 Menu
 	<ul>
 	    <li>
@@ -15,4 +15,4 @@ Menu
  			<a href="${aboutUrl}">About</a>
  		</li>
 	</ul>
-</div>
+</div> --%>

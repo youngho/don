@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-
-
 <div class="lavalamp dark">
 	<ul>
 		<spring:url value="/" var="homeUrl" htmlEscape="true"/>
@@ -16,10 +14,5 @@
 		
 		<spring:url value="/test" var="testUrl" htmlEscape="true" />
 		<li><a href="${testUrl }">test</a></li>
-		
-		<li><a href="">Contacts</a></li>
-		<li><a href="">Back to Article</a></li>
-		<li><a href="">How it Works?</a></li>
 	</ul>
-	<div class="floatr">123</div>
 </div>

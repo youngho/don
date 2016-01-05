@@ -36,7 +36,7 @@
 				location.href = "/don/money";
 			}
 		</script>
-		<div>
+		<div class="well">
 			<form:form commandName="moneyVo" name="form" method="post" action="">
 				<table style="width: 40%">
 					<tr>
@@ -49,25 +49,25 @@
 					</tr>
 					<tr>
 						<td align="left">USED_NAME :</td>
-						<td><input type="text" id="usedName" name="usedName" value="" maxlength="20" size="20" /></td>
+						<td><input class="form-control" type="text" id="usedName" name="usedName" value="" maxlength="20" size="20" /></td>
 					</tr>
 					<tr>
 						<td align="left">USED_DT :</td>
-						<td><input type="text" id="usedDt" name="usedDt" value="" maxlength="20" size="20" class="datetimepicker" /></td>
+						<td><input class="form-control" type="text" id="usedDt" name="usedDt" value="" maxlength="20" size="20" class="datetimepicker" /></td>
 					</tr>
 					<tr>
 						<td align="left">TOT_USED_MONEY :</td>
-						<td><input type="text" id="totUsedMoney" name="totUsedMoney" value="" maxlength="20" size="20" /></td>
+						<td><input class="form-control" type="text" id="totUsedMoney" name="totUsedMoney" value="" maxlength="20" size="20" /></td>
 					</tr>
 					<tr>
 						<td align="left">CARD_GGANG :</td>
-						<td><input type="text" id="cardGgang" name="cardGgang" value="" maxlength="20" size="20" /></td>
+						<td><input class="form-control" type="text" id="cardGgang" name="cardGgang" value="" maxlength="20" size="20" /></td>
 					</tr>
 					<tr>
 						<td align="right"><input type="button" value="저장" onclick="insertAct()" /> <input type="button" value="취소" onclick="listAct()" /></td>
 					</tr>
 					<tr>
-						<td><input id="datetimepicker" type="text"></td>
+						<td><input class="form-control" id="datetimepicker" type="text"></td>
 					</tr>
 				</table>
 			</form:form>

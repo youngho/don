@@ -25,7 +25,7 @@
 				var f = document.form;
 				console.log(f.idOut.value);
 				if (!!f.idOut.value && !!f.usedName.value && !!f.usedDt.value) {
-					f.action = "/don/input";
+					f.action = "/input";
 					f.submit();
 				} else {
 					alert("input value");
@@ -33,7 +33,7 @@
 			}
 
 			function listAct() {
-				location.href = "/don/money";
+				location.href = "/money";
 			}
 		</script>
 		<div class="well">

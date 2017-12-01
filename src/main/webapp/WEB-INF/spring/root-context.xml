@@ -4,7 +4,7 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<bean id="dataSource" class="org.apache.ibatis.datasource.pooled.PooledDataSource">
 		<property name="driver" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://192.168.0.18:3306/don"></property>
+		<property name="url" value="jdbc:mysql://172.30.1.43:3306/don"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="mysqldudgh"></property>
 	</bean>

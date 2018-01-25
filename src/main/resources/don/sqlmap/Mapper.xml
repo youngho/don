@@ -50,6 +50,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-ma
     
     <!-- 카드번호조회 -->
     <select id="retireveCardNum" resultType="String">
-    	select CARD_NUM from `CARD` c group by card_NUM
+    	select CARD_NUM from `CARD` c  WHERE AVAILABLE = TRUE
     </select>
 </mapper>

@@ -18,7 +18,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-ma
     
     <select id ="R01" parameterType="java.util.HashMap" resultType= "java.util.HashMap">
         select *
-        from CARD
+        from CARD where AVAILABLE = TRUE
     </select >
     
     <select id ="selectMoney" parameterType="java.util.HashMap" resultType= "java.util.HashMap">
